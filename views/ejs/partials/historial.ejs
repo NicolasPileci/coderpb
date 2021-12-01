@@ -1,0 +1,23 @@
+    <div>
+        <% if (productos.length > 0) { %>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Ruta</th>
+                </tr>
+                <% for(producto of productos) { %>
+                    <tr>
+                        <td><%= producto.name %></td>  
+                        <td><%= producto.price %></td>  
+                        <td><%= producto.route %></td>  
+                    </tr>
+                <% } %>
+        </table>
+        <% } else { %>
+            <p class="alert alert-danger">No se encontraron datos</p>
+        <% } %>
+    </div>
+    <a href="http://localhost:8000">
+        <input type="button" value="Volver al Formulario">
+    </a>

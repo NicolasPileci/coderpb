@@ -1,0 +1,16 @@
+body
+    form(action='productos' method='POST')
+        div
+            label(for='name') Nombre Producto
+            input(type='text', placeholder='Nombre' name='name')
+        div
+            label(for='price') Precio
+            input(type='number', placeholder='Precio' name='price')
+        div
+            label(for='route') Ruta Img
+            input(type='text', placeholder='Ruta' name='route')
+        button(type='submit') Submit
+    a(href='http://localhost:8000/productos')
+        input(type='button' value='Productos Cargados')    
+                
+

@@ -1,0 +1,16 @@
+if (productos.length > 0)
+    table
+        tr
+            th Nombre
+            th Precio 
+            th Ruta Imagen
+        each producto in productos
+            tr
+                td= producto.name
+                td= producto.price
+                td= producto.route
+else 
+    h2 No hay datos 
+        
+a(href='http://localhost:8000/')
+    input(type='button' value='Voler al formulario') 
